@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Full Stack PHP & React Developer Portfolio - Specialized in modern web development">
+    <title>Portfolio - Full Stack Developer</title>
+    
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Premium Loading Bar -->
+    <div class="premium-loader"></div>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#hero">
+                <span class="brand-text">Portfolio</span>
+            </a>
+            
+            <!-- Theme Toggle -->
+            <div class="theme-toggle-wrapper">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <div class="theme-toggle-track">
+                    <div class="theme-toggle-thumb">
+                        <i class="bi bi-moon-fill theme-icon moon-icon"></i>
+                        <i class="bi bi-sun-fill theme-icon sun-icon"></i>
+                    </div>
+                </div>
+            </button>
+            <span class="theme-label">Theme</span>
+            </div>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tech-stack">Technologies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6 hero-content fade-in-up">
+                    <div class="hero-badge">
+                        <i class="bi bi-code-slash"></i> Passionate Developer
+                    </div>
+                    <h1 class="hero-title">
+                        Hello, I'm <span class="highlight-name">Rakotonandrasana Laethicia Prisca</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Full Stack PHP & ReactJS Developer</h2>
+                    <p class="hero-description">
+                        Passionate Full Stack Developer crafting modern, high-performance web applications.
+                        I transform creative ideas into elegant digital solutions by combining strong technical expertise 
+                        with intuitive, user-centered design. Based in Madagascar, I bring a unique and creative 
+                        perspective to every project I build.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary btn-hero me-3">
+                            <i class="bi bi-briefcase me-2"></i>View My Projects
+                        </a>
+                        <a href="#contact" class="btn btn-outline-light btn-hero">
+                            <i class="bi bi-envelope me-2"></i>Contact Me
+                        </a>
+                    </div>
+                    <div class="hero-scroll">
+                        <a href="#about" class="scroll-indicator">
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 hero-image-container fade-in-up">
+                    <div class="hero-image-wrapper">
+                        <div class="hero-image-frame">
+                            <img src="lety.PNG" alt="Lety - Full Stack Developer" class="hero-image">
+                            <div class="hero-image-overlay"></div>
+                        </div>
+                        <div class="floating-element floating-element-1">
+                            <i class="bi bi-code-slash"></i>
+                        </div>
+                        <div class="floating-element floating-element-2">
+                            <i class="bi bi-palette"></i>
+                        </div>
+                        <div class="floating-element floating-element-3">
+                            <i class="bi bi-globe"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="section-header text-center mb-5 fade-in">
+                        <span class="section-tag">💎 ABOUT ME</span>
+                        <h2 class="section-title">My Journey</h2>
+                        <div class="section-divider"></div>
+                        <p class="section-description">From Logic to Creativity</p>
+                    </div>
+                    
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="about-story">
+                                <div class="story-content">
+                                    <p class="story-intro">
+                                        I'm a Full Stack Developer who enjoys building reliable and scalable web applications using PHP, MySQL, and ReactJS.
+                                        I focus on writing clean, structured code while creating interfaces that feel smooth and intuitive.
+                                    </p>
+                                    
+                                    <p class="story-evolution">
+                                        Over time, I expanded my skills beyond traditional web development — experimenting with Flutter for mobile applications and Electron for desktop solutions.
+                                        I enjoy exploring how one idea can live across web, mobile, and desktop platforms.
+                                    </p>
+                                </div>
+                                
+                                <div class="skills-showcase mt-5">
+                                    <h4 class="skills-title">What I Work With</h4>
+                                    <div class="skill-categories">
+                                        <div class="skill-category">
+                                            <div class="category-header">
+                                                <i class="bi bi-server"></i>
+                                                <span>Backend</span>
+                                            </div>
+                                            <div class="category-skills">
+                                                <span class="skill-tag">PHP</span>
+                                                <span class="skill-tag">MySQL</span>
+                                                <span class="skill-tag">REST APIs</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="skill-category">
+                                            <div class="category-header">
+                                                <i class="bi bi-palette"></i>
+                                                <span>Frontend</span>
+                                            </div>
+                                            <div class="category-skills">
+                                                <span class="skill-tag">ReactJS</span>
+                                                <span class="skill-tag">JavaScript</span>
+                                                <span class="skill-tag">Bootstrap</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="skill-category">
+                                            <div class="category-header">
+                                                <i class="bi bi-layers"></i>
+                                                <span>Cross-Platform</span>
+                                            </div>
+                                            <div class="category-skills">
+                                                <span class="skill-tag">Flutter</span>
+                                                <span class="skill-tag">Electron</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="development-philosophy mt-5">
+                                    <h4 class="philosophy-title">How I Think About Development</h4>
+                                    <p class="philosophy-intro">
+                                        I believe development is not just about making things work —
+                                        it's about building solutions that are:
+                                    </p>
+                                    <div class="philosophy-principles">
+                                        <div class="principle-item">
+                                            <i class="bi bi-check-circle"></i>
+                                            <span>Structured</span>
+                                        </div>
+                                        <div class="principle-item">
+                                            <i class="bi bi-check-circle"></i>
+                                            <span>Maintainable</span>
+                                        </div>
+                                        <div class="principle-item">
+                                            <i class="bi bi-check-circle"></i>
+                                            <span>Scalable</span>
+                                        </div>
+                                        <div class="principle-item">
+                                            <i class="bi bi-check-circle"></i>
+                                            <span>User-friendly</span>
+                                        </div>
+                                    </div>
+                                    <p class="philosophy-conclusion">
+                                        I enjoy transforming ideas into functional products that solve real problems.
+                                    </p>
+                                </div>
+                                
+                                <div class="beyond-code mt-5">
+                                    <h4 class="beyond-title">Beyond Code</h4>
+                                    <p class="beyond-text">
+                                        Curious by nature, always learning, always improving.
+                                        Every project is an opportunity to grow technically and creatively.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech-stack" class="tech-stack-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5 fade-in">
+                <span class="section-tag">My Tools</span>
+                <h2 class="section-title">Technologies & Stack</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">The technologies I use to create modern and high-performance web solutions</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- PHP Card -->
+                <div class="col-lg-4 col-md-6 fade-in-up">
+                    <div class="tech-card">
+                        <div class="tech-icon php-icon">
+                            <i class="bi bi-filetype-php"></i>
+                        </div>
+                        <h4 class="tech-name">PHP</h4>
+                        <p class="tech-description">
+                            Robust backend development with modern PHP, Laravel and Symfony frameworks for scalable applications.
+                        </p>
+                        <div class="tech-badge">Backend</div>
+                    </div>
+                </div>
+                
+                <!-- MySQL Card -->
+                <div class="col-lg-4 col-md-6 fade-in-up">
+                    <div class="tech-card">
+                        <div class="tech-icon mysql-icon">
+                            <i class="bi bi-database-fill"></i>
+                        </div>
+                        <h4 class="tech-name">MySQL</h4>
+                        <p class="tech-description">
+                            Design and optimization of performant and secure relational databases.
+                        </p>
+                        <div class="tech-badge">Database</div>
+                    </div>
+                </div>
+                
+                <!-- ReactJS Card -->
+                <div class="col-lg-4 col-md-6 fade-in-up">
+                    <div class="tech-card">
+                        <div class="tech-icon react-icon">
+                            <i class="bi bi-code-square"></i>
+                        </div>
+                        <h4 class="tech-name">ReactJS</h4>
+                        <p class="tech-description">
+                            Creating modern and reactive user interfaces with React, Redux and hooks for a smooth experience.
+                        </p>
+                        <div class="tech-badge">Frontend</div>
+                    </div>
+                </div>
+                
+                <!-- JavaScript Card -->
+                <div class="col-lg-4 col-md-6 fade-in-up">
+                    <div class="tech-card">
+                        <div class="tech-icon js-icon">
+                            <i class="bi bi-braces"></i>
+                        </div>
+                        <h4 class="tech-name">JavaScript</h4>
+                        <p class="tech-description">
+                            Mastery of modern JavaScript (ES6+), asynchronous and functional programming for dynamic applications.
+                        </p>
+                        <div class="tech-badge">Language</div>
+                    </div>
+                </div>
+                
+                <!-- Bootstrap Card -->
+                <div class="col-lg-4 col-md-6 fade-in-up">
+                    <div class="tech-card">
+                        <div class="tech-icon bootstrap-icon">
+                            <i class="bi bi-bootstrap-fill"></i>
+                        </div>
+                        <h4 class="tech-name">Bootstrap</h4>
+                        <p class="tech-description">
+                            Responsive and mobile-first design with Bootstrap 5 for elegant and accessible interfaces.
+                        </p>
+                        <div class="tech-badge">Framework</div>
+                    </div>
+                </div>
+                
+                <!-- Flutter Card -->
+                <div class="col-lg-4 col-md-6 fade-in-up">
+                    <div class="tech-card">
+                        <div class="tech-icon flutter-icon">
+                            <i class="bi bi-phone"></i>
+                        </div>
+                        <h4 class="tech-name">Flutter</h4>
+                        <p class="tech-description">
+                            Cross-platform mobile development with Flutter for beautiful native apps on iOS and Android.
+                        </p>
+                        <div class="tech-badge">Mobile</div>
+                    </div>
+                </div>
+                
+                <!-- Electron Card -->
+                <div class="col-lg-4 col-md-6 fade-in-up">
+                    <div class="tech-card">
+                        <div class="tech-icon electron-icon">
+                            <i class="bi bi-window"></i>
+                        </div>
+                        <h4 class="tech-name">Electron</h4>
+                        <p class="tech-description">
+                            Desktop application development using web technologies for cross-platform desktop solutions.
+                        </p>
+                        <div class="tech-badge">Desktop</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5 fade-in">
+                <span class="section-tag">My Projects</span>
+                <h2 class="section-title">Completed Projects</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">Discover a selection of my most recent work</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-lg-4 col-md-6 fade-in-up">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop" alt="Flutter Project" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-overlay-content">
+                                    <i class="bi bi-eye"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">Flutter Project</h4>
+                            <p class="project-description">
+                                Modern mobile application developed with Flutter, offering a native user experience
+                                on iOS and Android with intuitive and performant interface.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Dart</span>
+                                <span class="tech-tag">Flutter</span>
+                                <span class="tech-tag">Firebase</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="https://github.com/laethicia-prisca/med" class="btn btn-project-secondary">
+                                    <i class="bi bi-github me-2"></i>Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="col-lg-4 col-md-6 fade-in-up">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop" alt="Hotel Management System" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-overlay-content">
+                                    <i class="bi bi-eye"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">Hotel Management System</h4>
+                            <p class="project-description">
+                                Complete hotel management system with online booking, room management,
+                                billing and administrative dashboard.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Bootstrap</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="https://github.com/laethicia-prisca/hotel-Belety" class="btn btn-project-secondary">
+                                    <i class="bi bi-github me-2"></i>Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="col-lg-4 col-md-6 fade-in-up">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&h=600&fit=crop" alt="Hospital Management System" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-overlay-content">
+                                    <i class="bi bi-eye"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">Hospital Management System</h4>
+                            <p class="project-description">
+                                Hospital management system for patient tracking, appointments,
+                                medical records and healthcare service administration.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="https://github.com/laethicia-prisca/hospital-management-system" class="btn btn-project-secondary">
+                                    <i class="bi bi-github me-2"></i>Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="col-lg-4 col-md-6 fade-in-up">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1581078426770-6d336e5de7bf?w=800&h=600&fit=crop" alt="University Management" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-overlay-content">
+                                    <i class="bi bi-eye"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">University Management</h4>
+                            <p class="project-description">
+                                University management platform for student enrollment,
+                                course management, grades and complete academic tracking.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Bootstrap</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="https://github.com/laethicia-prisca/gestion-universitaire" class="btn btn-project-secondary">
+                                    <i class="bi bi-github me-2"></i>Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="col-lg-4 col-md-6 fade-in-up">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726a?w=800&h=600&fit=crop" alt="Gaming Platform" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-overlay-content">
+                                    <i class="bi bi-eye"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">Gaming Platform</h4>
+                            <p class="project-description">
+                                Online gaming platform with ranking system,
+                                real-time multiplayer and modern gaming interface.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="https://github.com/laethicia-prisca/plateforme-jeux" class="btn btn-project-secondary">
+                                    <i class="bi bi-github me-2"></i>Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="col-lg-4 col-md-6 fade-in-up">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop" alt="Virtual Bank" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-overlay-content">
+                                    <i class="bi bi-eye"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">Virtual Bank</h4>
+                            <p class="project-description">
+                                The Virtual Bank simulates the operation of a real bank with account creation,
+                                financial management and secure transactions.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Bootstrap</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="https://github.com/laethicia-prisca/banque-virtuelle" class="btn btn-project-secondary">
+                                    <i class="bi bi-github me-2"></i>Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5 fade-in">
+                <span class="section-tag">Let's Connect</span>
+                <h2 class="section-title">Contact Me</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">Have a question, a project, or just want to chat? Feel free to reach out!</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-wrapper fade-in-up">
+                        <div class="row">
+                            <!-- Contact Info -->
+                            <div class="col-lg-4 mb-4 mb-lg-0">
+                                <div class="contact-info">
+                                    <h4 class="contact-info-title mb-4">Information</h4>
+                                    
+                                    <div class="contact-info-item">
+                                        <div class="contact-icon">
+                                            <i class="bi bi-geo-alt-fill"></i>
+                                        </div>
+                                        <div class="contact-text">
+                                            <h5>Location</h5>
+                                            <p>Antananarivo, Madagascar</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="contact-info-item">
+                                        <div class="contact-icon">
+                                            <i class="bi bi-envelope-fill"></i>
+                                        </div>
+                                        <div class="contact-text">
+                                            <h5>Email</h5>
+                                            <p><a href="mailto:laethiciaprisca@gmail.com" class="contact-email">laethiciaprisca@gmail.com</a></p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="contact-info-item">
+                                        <div class="contact-icon">
+                                            <i class="bi bi-clock-fill"></i>
+                                        </div>
+                                        <div class="contact-text">
+                                            <h5>Availability</h5>
+                                            <p>Mon - Fri: 9am - 6pm</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="social-links mt-4">
+                                        <a href="https://github.com/laethicia-prisca" class="social-link" aria-label="GitHub" target="_blank">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                        <a href="https://linkedin.com/in/laethicia-prisca" class="social-link" aria-label="LinkedIn" target="_blank">
+                                            <i class="bi bi-linkedin"></i>
+                                        </a>
+                                        <a href="https://twitter.com/laethicia_prisca" class="social-link" aria-label="Twitter" target="_blank">
+                                            <i class="bi bi-twitter"></i>
+                                        </a>
+                                        <a href="https://instagram.com/laethicia_prisca" class="social-link" aria-label="Instagram" target="_blank">
+                                            <i class="bi bi-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Contact Form -->
+                            <div class="col-lg-8">
+                                <form id="contactForm" class="contact-form" method="POST">
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
+                                        <div class="invalid-feedback">
+                                            Please enter your name.
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="your@email.com" required>
+                                        <div class="invalid-feedback">
+                                            Please enter a valid email address.
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label for="subject" class="form-label">Subject</label>
+                                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Message subject" required>
+                                        <div class="invalid-feedback">
+                                            Please enter a subject.
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+                                        <div class="invalid-feedback">
+                                            Please enter your message.
+                                        </div>
+                                    </div>
+                                    
+                                    <button type="submit" class="btn btn-contact w-100">
+                                        <i class="bi bi-send me-2"></i>Send Message
+                                    </button>
+                                    
+                                    <div id="formMessage" class="form-message mt-3"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-center text-lg-start mb-3 mb-lg-0">
+                    <p class="footer-text mb-0">
+                        &copy; 2026 Portfolio. Created with <i class="bi bi-heart-fill text-danger"></i> and <i class="bi bi-code-slash"></i>
+                    </p>
+                </div>
+                <div class="col-lg-6 text-center text-lg-end">
+                    <p class="footer-text mb-0">
+                        Designed & Developed by <span class="highlight-footer">Laethicia</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
